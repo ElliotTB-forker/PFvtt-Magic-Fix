@@ -80,7 +80,7 @@ function replacePlayerDice() {
     const playerFakeDiceFormula = userDictionary[userId] || ""; // Default to ">=1" if no formula is found
 
     // Parse the formula for the current player
-    const target = { value: 1, condition: "", maxAttempts: 1000 };
+    const target = { value: 1, condition: "", maxAttempts: 30 };
     const tempTarget = parseTarget(playerFakeDiceFormula);
     target.condition = tempTarget.condition;
     target.value = tempTarget.value;
